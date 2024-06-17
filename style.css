@@ -1,17 +1,72 @@
-h1 {
-    color: #ff6600;
-    text-align: center;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 7rem;
-    font-weight: 300;
-    max-width: 80vw;
-    margin: auto;
+body {
+    font-family: "mmontserrat", sans-serif;
 }
 
-p {
-    font-weight: 300;
-    max-width: 80vw;
-    margin: auto;
-    text-align: center;
-    font-family: 'Montserrat', sans-serif;
+.container-a {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+
+.big-text {
+    color: white;
+    background-color: darkslategrey;
+    padding: 100px;
+}
+
+.small-text  {
+    color: white;
+    background-color: darkred;
+    padding: 100px;
+}
+
+
+.container-b {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    background-color: bisque;
+}
+
+.container-b > .grid {
+    padding: 100px;
+    border: 1px solid #000;
+}
+
+.container-c {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+
+.third-big-text {
+    background-color:darkolivegreen;
+    color: white;
+    padding: 100px;
+}
+
+.third-small-text {
+    color: white;
+    background-color: cornflowerblue;
+    padding: 100px;
+}
+
+.container-d {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+}
+
+.last-big-text {
+    background-color: chocolate;
+    color: white;
+    padding: 100px;
+}
+
+.mid-text {
+    background-color:darkorchid;
+    color: white;
+    padding: 100px;
+}
+
+.last-text {
+    background-color:tomato;
+    color: white;
+    padding: 100px;
 }
