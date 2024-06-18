@@ -1,35 +1,105 @@
-body {
-    font-family: "Forte", sans-serif;
-    font-size: 2rem;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+    color: #0B1215;
+}
+
+.navbar {
+    justify-content: space-evenly;
+}
+
+.container-fluid {
+    max-width: 60vw;
+}
+
+.logo-img > img {
+    max-width: 10%;
+}
+
+.container-a, .container-b, .container-c, .container-d {
+    display: grid;
+    max-width: 90vw;
+    margin: auto;
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+
+img {
+    max-width: 100%;
+    border-radius: 8px;
+}
+
+h1 {
+    font-size: 4rem;
+    font-family: 'Inter', sans-serif;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+
+h4 {
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+p {
+    font-size: 1.2rem;
+    font-weight: 300;
+    line-height: 2.5rem;
+    margin-top: 3%;
+    color: #352f36;
+}
+
+#thick-text {
+    color: gray;
+    font-style: italic;
+    
 }
 
 .container-a {
     display: grid;
     grid-template-columns: 2fr 1fr;
+    align-items: center;
 }
 
-.big-text {
-    color: white;
-    background-color: darkslategrey;
-    padding: 100px;
+.big-session {
+    color: darkslategray;
+    padding: 5% 15%;
 }
 
-.small-text  {
-    color: white;
-    background-color: darkred;
-    padding: 100px;
+.small-img {
+    padding: 2%;
 }
-
 
 .container-b {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    background-color: bisque;
+    padding: 5%;
+    border-radius: 8px;
 }
 
 .container-b > .grid {
-    padding: 100px;
-    border: 1px solid #000;
+    padding: 10%;
+    margin: 5%;
+    border-radius: 8px;
+    box-shadow: 5px 5px 10px rgba(238, 236, 236, 0.5);
+}
+
+.a {
+    background-color: rgba(255, 242, 223, 0.37);
+}
+
+.b {
+    background-color: rgba(195, 214, 255, 0.295);
+}
+
+.c {
+    background-color: rgba(252, 219, 255, 0.308);
+}
+
+.container-b > .grid > h4 {
+    margin-top: 5%;
 }
 
 .container-c {
@@ -70,4 +140,32 @@ body {
     background-color:tomato;
     color: white;
     padding: 100px;
+}
+
+@media (max-width: 576px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    p {
+        font-size: 1rem;
+        line-height: 2rem;
+    }
+
+    img {
+        max-width: 100%;
+    }
+    
+    .container-a {
+        display: grid;
+        grid-template-columns: 1fr;
+        align-items: center;
+    }
+    
+    .container-b {
+        display: grid;
+        grid-template-columns: 1fr;
+        padding: 1%;
+        border-radius: 8px;
+    }
 }
