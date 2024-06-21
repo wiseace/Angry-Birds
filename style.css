@@ -137,10 +137,12 @@ p {
 }
 
 
-/**/
+/*Mobile Responsiveness Session*/
+
 @media (max-width: 576px) {
     h1 {
-        font-size: 2rem;
+        font-size: 1.5rem;
+        font-weight: 700;
     }
 
     p {
@@ -151,11 +153,18 @@ p {
     img {
         max-width: 100%;
     }
+
+    .container-a, .container-b, .container-c, .container-d {
+        max-width: 95vw;
+        margin: auto;
+    }
     
     .container-a {
         display: grid;
         grid-template-columns: 1fr;
         align-items: center;
+        gap: 0;
+        background-color: transparent;
     }
     
     .container-b {
@@ -163,5 +172,29 @@ p {
         grid-template-columns: 1fr;
         padding: 1%;
         border-radius: 8px;
+        gap: 2%;
+    }
+
+    .container-c {
+        display: grid;
+        grid-template-columns: 1fr;
+        align-items: center;
+        gap: 0;
+        background-color: transparent;
+        margin-top: 20%;
+    }
+
+    .third-big-text, .third-small-img {
+        padding: 5%;
+    }
+
+    .container-d {
+        display: grid;
+        grid-template-columns: 1fr;
+        padding: 5%;
+    }
+
+    .last-big-text {
+        padding: 0;
     }
 }
