@@ -58,18 +58,14 @@ p {
 }
 
 .container-a {
-    display: grid;
     grid-template-columns: 2fr 1fr;
+    margin: auto;
     align-items: center;
 }
 
 .big-session {
     color: darkslategray;
     padding: 5% 15%;
-}
-
-.small-img {
-    padding: 2%;
 }
 
 .container-b {
@@ -104,19 +100,12 @@ p {
 
 .container-c {
     display: grid;
-    grid-template-columns: 2fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
 }
 
-.third-big-text {
-    background-color:darkolivegreen;
-    color: white;
-    padding: 100px;
-}
-
-.third-small-text {
-    color: white;
-    background-color: cornflowerblue;
-    padding: 100px;
+.third-big-text, .third-small-img {
+    padding: 15%;
 }
 
 .container-d {
