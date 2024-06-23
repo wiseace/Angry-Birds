@@ -22,6 +22,21 @@ nav {
     z-index: 1000;
 }
 
+.mobile-nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 2% 5%;
+}
+
+.mobile-nav .logo img {
+    max-width: 100px;
+}
+
+.menu-icon {
+    font-size: 2rem;
+    cursor: pointer;
+}
+
 .logo > img {
     max-width: 40%;
 }
@@ -30,6 +45,7 @@ nav {
     padding: 2% 5%;
     border: 1px solid #0b1215;
     background-color: transparent;
+    font-weight: 600;
 }
 
 .nav-area > ul {
@@ -43,7 +59,8 @@ nav {
 .nav-area > ul > li > a {
     text-decoration: none;
     color: black;
-    letter-spacing: 1px;
+    font-weight: 600;
+    letter-spacing: 2px;
 }
 
 .container-a, .container-b, .container-c, .container-d {
@@ -170,7 +187,19 @@ p {
 
 /*Mobile Responsiveness Session*/
 
-@media (max-width: 576px) {
+@media (min-width: 1200px) {
+        .mobile-nav {
+            display: none;
+        }
+}
+
+@media (max-width: 1200px) {
+    
+    .main-nav {
+        display: none;
+    }
+    
+    
     h1 {
         font-size: 1.5rem;
         font-weight: 700;
